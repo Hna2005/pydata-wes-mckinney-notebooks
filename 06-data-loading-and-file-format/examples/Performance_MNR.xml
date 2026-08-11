@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<INDICATORS>
+
+    <INDICATOR>
+        <AGENCY_NAME>New York City Transit</AGENCY_NAME>
+        <INDICATOR_NAME>On-Time Performance</INDICATOR_NAME>
+        <DESCRIPTION>Percentage of trains arriving on time</DESCRIPTION>
+        <PERIOD_YEAR>2023</PERIOD_YEAR>
+        <PERIOD_MONTH>January</PERIOD_MONTH>
+        <ACTUAL_VALUE>96.5</ACTUAL_VALUE>
+        <TARGET_VALUE>95.0</TARGET_VALUE>
+        <UNIT>%</UNIT>
+
+        <PARENT_SEQ>1</PARENT_SEQ>
+        <INDICATOR_SEQ>101</INDICATOR_SEQ>
+        <DESIRED_CHANGE>Increase</DESIRED_CHANGE>
+        <DECIMAL_PLACES>1</DECIMAL_PLACES>
+    </INDICATOR>
+
+    <INDICATOR>
+        <AGENCY_NAME>New York City Transit</AGENCY_NAME>
+        <INDICATOR_NAME>Customer Satisfaction</INDICATOR_NAME>
+        <DESCRIPTION>Customer survey score</DESCRIPTION>
+        <PERIOD_YEAR>2023</PERIOD_YEAR>
+        <PERIOD_MONTH>February</PERIOD_MONTH>
+        <ACTUAL_VALUE>89.2</ACTUAL_VALUE>
+        <TARGET_VALUE>90.0</TARGET_VALUE>
+        <UNIT>%</UNIT>
+
+        <PARENT_SEQ>1</PARENT_SEQ>
+        <INDICATOR_SEQ>102</INDICATOR_SEQ>
+        <DESIRED_CHANGE>Increase</DESIRED_CHANGE>
+        <DECIMAL_PLACES>1</DECIMAL_PLACES>
+    </INDICATOR>
+
+    <INDICATOR>
+        <AGENCY_NAME>New York City Transit</AGENCY_NAME>
+        <INDICATOR_NAME>Service Reliability</INDICATOR_NAME>
+        <DESCRIPTION>Percentage of scheduled service delivered</DESCRIPTION>
+        <PERIOD_YEAR>2023</PERIOD_YEAR>
+        <PERIOD_MONTH>March</PERIOD_MONTH>
+        <ACTUAL_VALUE>98.1</ACTUAL_VALUE>
+        <TARGET_VALUE>97.5</TARGET_VALUE>
+        <UNIT>%</UNIT>
+
+        <PARENT_SEQ>1</PARENT_SEQ>
+        <INDICATOR_SEQ>103</INDICATOR_SEQ>
+        <DESIRED_CHANGE>Increase</DESIRED_CHANGE>
+        <DECIMAL_PLACES>1</DECIMAL_PLACES>
+    </INDICATOR>
+
+</INDICATORS>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Failed Banks List - Practice Dataset</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Failed Banks List - Sample Data</h1>
+    <p>This is a sample dataset for practicing pandas <code>read_html()</code> function.</p>
+
+    <h2>Table 1: Failed Banks Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Bank Name</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Closing Date</th>
+                <th>Assets (Millions $)</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First National Bank</td>
+                <td>New York</td>
+                <td>NY</td>
+                <td>2023-01-15</td>
+                <td>1500</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Pacific Western Bank</td>
+                <td>Los Angeles</td>
+                <td>CA</td>
+                <td>2023-02-20</td>
+                <td>2300</td>
+                <td>Acquired</td>
+            </tr>
+            <tr>
+                <td>Texas Community Bank</td>
+                <td>Houston</td>
+                <td>TX</td>
+                <td>2023-03-10</td>
+                <td>3200</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Sunrise Bank of Florida</td>
+                <td>Miami</td>
+                <td>FL</td>
+                <td>2023-04-05</td>
+                <td>4500</td>
+                <td>Under Investigation</td>
+            </tr>
+            <tr>
+                <td>Great Lakes Bank</td>
+                <td>Chicago</td>
+                <td>IL</td>
+                <td>2023-05-12</td>
+                <td>2800</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Mountain West Bank</td>
+                <td>Denver</td>
+                <td>CO</td>
+                <td>2023-06-18</td>
+                <td>1900</td>
+                <td>Acquired</td>
+            </tr>
+            <tr>
+                <td>Atlantic Coast Bank</td>
+                <td>Boston</td>
+                <td>MA</td>
+                <td>2023-07-22</td>
+                <td>3400</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Golden State Bank</td>
+                <td>San Francisco</td>
+                <td>CA</td>
+                <td>2023-08-30</td>
+                <td>5100</td>
+                <td>Under Investigation</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table 2: Summary by Year</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Number of Failed Banks</th>
+                <th>Total Assets Lost (Millions $)</th>
+                <th>Average Assets</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2021</td>
+                <td>5</td>
+                <td>8500</td>
+                <td>1700</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>8</td>
+                <td>12000</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>12</td>
+                <td>18500</td>
+                <td>1542</td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>3</td>
+                <td>5600</td>
+                <td>1867</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table 3: Bank Status Distribution</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Number of Banks</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Closed</td>
+                <td>4</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Acquired</td>
+                <td>2</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>Under Investigation</td>
+                <td>2</td>
+                <td>25%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table 4: State-wise Distribution</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Number of Banks</th>
+                <th>Total Assets</th>
+                <th>Average Assets</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CA</td>
+                <td>2</td>
+                <td>7400</td>
+                <td>3700</td>
+            </tr>
+            <tr>
+                <td>TX</td>
+                <td>1</td>
+                <td>3200</td>
+                <td>3200</td>
+            </tr>
+            <tr>
+                <td>NY</td>
+                <td>1</td>
+                <td>1500</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>FL</td>
+                <td>1</td>
+                <td>4500</td>
+                <td>4500</td>
+            </tr>
+            <tr>
+                <td>IL</td>
+                <td>1</td>
+                <td>2800</td>
+                <td>2800</td>
+            </tr>
+            <tr>
+                <td>CO</td>
+                <td>1</td>
+                <td>1900</td>
+                <td>1900</td>
+            </tr>
+            <tr>
+                <td>MA</td>
+                <td>1</td>
+                <td>3400</td>
+                <td>3400</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
